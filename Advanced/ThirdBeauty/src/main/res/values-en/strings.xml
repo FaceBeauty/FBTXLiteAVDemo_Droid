@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">live</string>
+    <string name="thirdbeauty_start_push">Publish</string>
+    <string name="thirdbeauty_please_input_streamd">Stream Id</string>
+    <string name="thirdbeauty_stop_push">Stop</string>
+    <string name="thirdbeauty_faceunity">Third-Party Beauty Filters</string>
+    <string name="thirdbeauty_xmagic">FaceBeauty</string>
+</resources>

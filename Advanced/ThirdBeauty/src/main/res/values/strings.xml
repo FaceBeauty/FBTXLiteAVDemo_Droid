@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">live</string>
+    <string name="thirdbeauty_start_push">开始推流</string>
+    <string name="thirdbeauty_please_input_streamd">请输入streamId</string>
+    <string name="thirdbeauty_stop_push">停止推流</string>
+    <string name="thirdbeauty_faceunity">第三方美颜</string>
+    <string name="thirdbeauty_xmagic">FaceBeauty</string>
+</resources>
