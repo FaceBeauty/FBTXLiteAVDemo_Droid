@@ -73,6 +73,7 @@ public class ThirdBeautyTencentEffectActivity extends MLVBBaseActivity implement
     private boolean isCameraSwitched;
     private boolean isRenderInit;
     private boolean isFrontCamera = true;
+    private FBPanelLayout FBPanelLayout;
     //todo --- facebeauty end
 
 //    private XmagicApi mXmagicApi;
@@ -90,7 +91,8 @@ public class ThirdBeautyTencentEffectActivity extends MLVBBaseActivity implement
         getSupportActionBar().hide();
 
         //todo --- facebeauty start
-        addContentView(new FBPanelLayout(this).init(getSupportFragmentManager()),
+        FBPanelLayout = new FBPanelLayout(this).init(getSupportFragmentManager());
+        addContentView(FBPanelLayout,
                 new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                         ViewGroup.LayoutParams.MATCH_PARENT));
         //todo --- facebeauty end
