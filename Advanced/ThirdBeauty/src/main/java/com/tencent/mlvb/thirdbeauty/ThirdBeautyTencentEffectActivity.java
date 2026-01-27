@@ -97,9 +97,9 @@ public class ThirdBeautyTencentEffectActivity extends MLVBBaseActivity implement
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         //todo --- facebeauty start
 
-        LightMakeupFragment lightMakeup = new LightMakeupFragment();//轻彩妆
-//        FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
-        fragmentTransaction.add(R.id.fl_beauty_container, lightMakeup);
+//        LightMakeupFragment lightMakeup = new LightMakeupFragment();//轻彩妆
+        FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
+        fragmentTransaction.add(R.id.fl_beauty_container, beautyFragment);
 
         fragmentTransaction.commit();
         //todo --- facebeauty end
