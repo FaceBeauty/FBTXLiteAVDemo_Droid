@@ -22,8 +22,12 @@ import android.widget.Toast;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBRotationEnum;
 import com.nimo.fb_effect.FBPanelLayout;
+import com.nimo.fb_effect.fragment.BeautyMakeUpFragment;
 import com.nimo.fb_effect.fragment.FBBeautyFragment;
+import com.nimo.fb_effect.fragment.LightMakeupFragment;
 import com.nimo.fb_effect.model.FBViewState;
+import com.nimo.fb_effect.utils.FBConfigTools;
+import com.nimo.fb_effect.utils.SharedPreferencesUtil;
 import com.tencent.live2.V2TXLiveDef;
 import com.tencent.live2.V2TXLivePusher;
 //import com.tencent.live2.V2TXLivePusherObserver;
@@ -93,8 +97,9 @@ public class ThirdBeautyTencentEffectActivity extends MLVBBaseActivity implement
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         //todo --- facebeauty start
 
-        FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
-        fragmentTransaction.add(R.id.fl_beauty_container, beautyFragment);
+        LightMakeupFragment lightMakeup = new LightMakeupFragment();//轻彩妆
+//        FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
+        fragmentTransaction.add(R.id.fl_beauty_container, lightMakeup);
 
         fragmentTransaction.commit();
         //todo --- facebeauty end

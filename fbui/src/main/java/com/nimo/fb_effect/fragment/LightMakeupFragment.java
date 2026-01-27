@@ -29,6 +29,7 @@ import com.nimo.fb_effect.base.FBBaseFragment;
 import com.nimo.fb_effect.model.FBEventAction;
 import com.nimo.fb_effect.model.FBState;
 import com.nimo.fb_effect.model.FBViewState;
+import com.nimo.fb_effect.utils.FBConfigTools;
 import com.nimo.fb_effect.utils.FBSelectedPosition;
 import com.nimo.fb_effect.utils.FBUICacheUtils;
 import com.nimo.fb_effect.utils.SharedPreferencesUtil;
@@ -75,6 +76,7 @@ public class LightMakeupFragment extends FBBaseFragment {
     @Override
     protected void initView(View view, Bundle savedInstanceState) {
         SharedPreferencesUtil.init(getContext());
+        FBConfigTools.getInstance().initFBConfigTools(getContext());
         htPager = view.findViewById(R.id.fb_pager);
         topIndicatorView = view.findViewById(R.id.top_indicator_view);
 //        alternateIndicatorView = view.findViewById(R.id.alternate_indicator_view);
