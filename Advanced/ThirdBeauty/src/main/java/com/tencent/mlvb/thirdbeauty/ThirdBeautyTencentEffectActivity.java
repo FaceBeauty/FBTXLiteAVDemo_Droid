@@ -92,18 +92,11 @@ public class ThirdBeautyTencentEffectActivity extends MLVBBaseActivity implement
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_beauty_tencent_effect);
-        getSupportActionBar().hide();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         //todo --- facebeauty start
-
-//        LightMakeupFragment lightMakeup = new LightMakeupFragment();//轻彩妆
-        FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
-        fragmentTransaction.add(R.id.fl_beauty_container, beautyFragment);
-
-        fragmentTransaction.commit();
+        addContentView(new FBPanelLayout(this).init(getSupportFragmentManager()),
+                new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         //todo --- facebeauty end
-
+        getSupportActionBar().hide();
         if (checkPermission()) {
             initView();
         }

@@ -35,6 +35,7 @@
   import com.nimo.fb_effect.fragment.FBARStickerFragment;
   import com.nimo.fb_effect.fragment.FBBeautyFragment;
   import com.nimo.fb_effect.fragment.FBWatermarkFragment;
+  import com.nimo.fb_effect.fragment.LightMakeupFragment;
   import com.nimo.fb_effect.fragment.MakeUpItemFragment;
   import com.nimo.fb_effect.model.FBEventAction;
   import com.nimo.fb_effect.model.FBViewState;
@@ -222,7 +223,15 @@
 
       initWatermark();
       Log.e("backFrom------", FBState.currentViewState.name());
-
+        ivFbTrigger.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPanel(FBViewState.BEAUTY);//美颜-美型-滤镜
+//                showPanel(FBViewState.LIGHT_MAKEUP);//轻彩妆
+//       showPanel(FBViewState.MASK);//面具
+//       showPanel(FBViewState.STICKER);//贴纸
+            }
+        });
     }
 
 
@@ -574,9 +583,18 @@
           switchModePanel(new FBWatermarkFragment(),"ar");
           FBState.currentViewState = viewState;
           FBState.currentAR = FBViewState.AR_PROP;
-          Log.e("--change_Panel==AR--",viewState.name());
           //setTakePhotoAnim(-280);
           break;
+          case LIGHT_MAKEUP:
+              ivFbTrigger.setVisibility(View.GONE);
+              ivFbRestore.setVisibility(View.GONE);
+              shutterIv.setVisibility(View.VISIBLE);
+              btnShutter.setVisibility(View.GONE);
+              stickerView.setVisibility(VISIBLE);
+              switchModePanel(new LightMakeupFragment(),"light_makeup");
+              FBState.currentViewState = viewState;
+              FBState.currentSecondViewState = FBViewState.LIGHT_MAKEUP;
+              break;
       }
 
     }
