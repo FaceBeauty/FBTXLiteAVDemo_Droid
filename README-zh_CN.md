@@ -1,7 +1,11 @@
 # MLVB API-Example 
 _中文 | [English](README.md)_
 
+1. **请至https://github.com/FaceBeauty/FaceBeautySDK_Android下载最新的fbui以及资源文件(fbeffect)**
+2. 全局搜索`todo --- facebeauty start ---`查看美颜集成步骤
+
 ## 前言
+
 这个开源示例Demo主要演示了 [移动直播 SDK](https://cloud.tencent.com/document/product/454) 部分API的使用示例，帮助开发者可以更好的理解 移动直播 SDK 的API，从而快速实现一些移动直播场景的基本功能。 
 
 ## 结构说明
@@ -24,13 +28,13 @@ _中文 | [English](README.md)_
   - [直播时移](./Advanced/TimeShift)
   
 >  说明：目前的工程结构跟标准的Android Studio工程在名称大小写上可能有略微的差异，主要目的是方便大家在网页上看到此工程时，名称意义更加清晰
- 
- 
+
+
 ## 环境准备
 - 最低兼容 Android 4.1（SDK API Level 16），建议使用 Android 5.0 （SDK API Level 21）及以上版本
 - Android Studio 3.5及以上版本
 - App 要求 Android 5.0及以上设备
- 
+
 
 ## 运行示例
 

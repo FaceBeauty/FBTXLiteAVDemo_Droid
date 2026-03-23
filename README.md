@@ -1,7 +1,11 @@
 # MLVB API-Example 
 _[中文](README-zh_CN.md) | English_
 
+1. **Please go to https://github.com/FaceBeauty/FaceBeautySDK_Android Download the latest fbui and resource files (fbeffect)**
+2. Global search `todo --- facebeauty start ---` View beauty integration steps
+
 ## Background
+
 This open-source demo shows how to use some APIs of the [MLVB SDK](https://www.tencentcloud.com/document/product/1071) to help you better understand the APIs and use them to implement some basic MLVB features.
 
 ## Contents
@@ -24,13 +28,13 @@ This demo covers the following features (click to view the details of a feature)
   - [Time Shift](./Advanced/TimeShift)
   
 >  Note: for clarity purposes, the naming of folders in the project may differ slightly from a standard Android Studio project in terms of letter case.
- 
- 
+
+
 ## Environment Requirements
 - Android 4.1 (SDK API level 16) or above; Android 5.0 (SDK API level 21) or above is recommended.
 - Android Studio 3.5 or above
 - Devices with Android 5.0 or above
- 
+
 
 ## Demo Run Example
 
@@ -138,7 +142,7 @@ Open the project with Android Studio, connect to an Android device, and compile 
 - For complete API documentation, see [SDK API Documentation](https://liteav.sdk.qcloud.com/doc/api/en/group__V2TXLivePusher__android.html).
 
 - Communication & Feedback   
-Welcome to join our Telegram Group to communicate with our professional engineers! We are more than happy to hear from you~
-Click to join: [https://t.me/+EPk6TMZEZMM5OGY1](https://t.me/+EPk6TMZEZMM5OGY1)   
-Or scan the QR code   
+  Welcome to join our Telegram Group to communicate with our professional engineers! We are more than happy to hear from you~
+  Click to join: [https://t.me/+EPk6TMZEZMM5OGY1](https://t.me/+EPk6TMZEZMM5OGY1)   
+  Or scan the QR code   
   <img src="https://qcloudimg.tencent-cloud.cn/raw/79cbfd13877704ff6e17f30de09002dd.jpg" width="300px">    
